@@ -342,6 +342,8 @@ public class Comment_SVM {
 		// "output result path"}
 		String [] parg = {filepath1 + "test.txt", filepath1 + "model.txt", filepath1 + "out_test.txt"};
 		svm_predict p = new svm_predict();
+		// svm_predict.main_my is updated from svm_predict.main,
+		// added the function to insert into DataBase.
 		p.main_my(parg, Comment_id);
 	}
 
