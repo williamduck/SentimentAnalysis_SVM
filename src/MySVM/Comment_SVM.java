@@ -531,8 +531,13 @@ public class Comment_SVM {
 				cf.makeTrainData(product_type);
 				cf.trainSVMModel();
 
-				cf.makeAllComment(product_type);
-				cf.judge();
+				// make test data
+				cf.makeTestData(product_type);
+				cf.testSVMModel();
+
+				// Use DataBase
+//				cf.makeAllComment(product_type);
+//				cf.judge();
 			} 
 		} catch(Exception e) {
 			e.printStackTrace();
