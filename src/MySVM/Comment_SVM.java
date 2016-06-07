@@ -332,6 +332,8 @@ public class Comment_SVM {
 	/**
 	 * Test SVM Predication.
 	 * 
+	 * **************Using DataBase***************
+	 * 
 	 * Testing parg {"input Testing data path", "input model path (output model path of trainSVMModel)",
 	 * "output result path"}
 	 * 
