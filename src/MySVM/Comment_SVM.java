@@ -522,7 +522,7 @@ public class Comment_SVM {
 		Comment_SVM cf = new Comment_SVM();
 		PreparedStatement pjs1 = null;
 		ResultSet rs1 = null;
-		String QryMacString1 = "SELECT class_id FROM product";
+		String QryMacString1 = "SELECT DISTINCT class_id FROM product";
 		try {
 			pjs1 = (PreparedStatement) cf.connector.getConnections().prepareStatement(QryMacString1);
 			rs1 = pjs1.executeQuery();
